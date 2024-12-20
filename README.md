@@ -34,12 +34,12 @@ Welcome to the repository for Joanne Pan's personal website. This project showca
 ## How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/joanne-pan-website.git
+   git clone https://github.com/khietvan123/profile.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd joanne-pan-website
+   cd profile
    ```
 
 3. Install dependencies:
