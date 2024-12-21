@@ -12,7 +12,7 @@
     display: flex;
     margin: 5px;
     align-items: center;
-    animation: fade-down 0.5s;
+    animation: fade-up 0.5s;
     img{
         width: 2vw;
         margin-right: 10px;
@@ -24,7 +24,7 @@
         font-size: 1.5vw;
         color: white;
         font-weight: 900;
-        font-style: normal
+        font-style: normal;
     }
     
 }
@@ -36,7 +36,7 @@
     gap: 10px; /*space between link*/
     white-space: nowrap;
     margin-right: 1vw;
-    animation: fade-down 0.5s;
+    animation: fade-up 0.5s;
 }
 
 .nav-link{
@@ -48,7 +48,7 @@
 
 hr{
     width: 50%;
-    animation:fade-down 0.5s;
+    animation:fade-up 0.5s;
 }
 
 /*Style body start here*/
@@ -62,6 +62,7 @@ body{
     border-width: 5px; */
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20vw;
 }
 #greet-container{
     width: auto;
@@ -81,6 +82,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap:wrap;
+
     h1{
         font-size: 3vw;
         font-weight: 900;
@@ -91,18 +93,27 @@ body{
 #contact-button{
     padding: 10px 20px;
     width: 10vw;
-    height: 5vh;
+
     border-radius: 100px;
     margin-top: 20px;
-    font-size: 0.9vw;
+    font-size: 1.5vw;
     font-weight: 600;
     background: linear-gradient(to right, rgb(147, 1, 195), rgb(231, 37, 173));
     border: none;
     cursor: pointer;
+
+    transition: transform 0.3s ease;
+
+}
+
+#contact-button:hover{
+    filter: drop-shadow(5px 5px 10px rgb(100, 5, 100));
+    transform: translateY(-5px) scaleX(1);
 }
 
 
 #image{
+
     width: 35%;
     margin-right: 3em;
     /* border: solid white;
@@ -111,7 +122,37 @@ body{
         width: 100%;
         transform: scaleX(-1);
         position: relative;
+        filter: drop-shadow(20px 20px 50px rgb(94, 0, 94));
+        transition: transform 0.5s ease;
     }
+    img:hover {
+        filter: drop-shadow(20px 20px 50px rgb(157, 5, 157));
+        transform: translateY(-30px) scaleX(-1);
+    }
+}
+
+#about-me{
+    width: 45vw;
+    h1{
+        text-align: left;
+        color: purple;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    p{
+        font-family: 'lato', sans-serif;
+        color: white;
+        font-size: 2vw;
+        font-weight: 900;
+        text-align: left;
+        margin: 10px 10px 2% 0;
+    }
+}
+
+#illustration-1
+{
+    width: 40vw;
+    filter: drop-shadow(30px 30px 1000px rgb(64, 10, 111));
 }
 
 /*ANIMATION*/
@@ -129,10 +170,20 @@ body{
 @keyframes fade-down {
     from{
         opacity: 0;
-        transform: translateY(-30px) scale(0.9);
+        transform: translateY(0px) scale(0.9);
     }
     to{
         opacity: 1;
-        transform: translateY(0px) scale(1);
+        transform: translateY(-30px) scale(1);
     }
 }
+
+@keyframes up-down {
+    0% { top: 40px; }
+    20% { top: 35px; } /* Slight move up */
+    50% { top: 20px; } /* More significant move up */
+    80% { top: 35px; } /* Slight move back down */
+    100% { top: 40px; } /* Return to original position */
+}
+
+  
