@@ -10,6 +10,7 @@
     <link href="./stylesheet/reset.css" rel="stylesheet">
     <link href="./stylesheet/main.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon.ico" alt="free icon">
+    <script src="./script/index.js"></script>
 
 </head>
 <body>
@@ -28,7 +29,7 @@
     </header>
     <hr>
     <!-- Greetings start here -->
-    <div class="container">
+    <div class="container" id="container-1">
         <div id="greet-container">
             <div id="greeting">
                 <h1>Greetings!</h1>
@@ -44,7 +45,7 @@
         <div id="illustration">
             <img id="illustration-1" src="./img/img-1.png" alt="illustration picture">
         </div>
-        <div id="about-me">
+        <div class="content-title" id="about-me">
             <h1>About Me</h1>
             <p> Hi, I'm Joanne Pan, a passionate student at Seneca Polytechnic,
                 currently pursuing advanced studies in web programming,
@@ -52,20 +53,30 @@
             <p>I am particularly interested in applying my technical knowledge
                  in roles like web developer or junior programmer, where I 
                 can contribute to meaningful projects while growing as a professional.</p>
-            <p>Outside of programming, I enjoy learning about film history, 
-                exploring the relationship between fandom and identity, and 
-                honing my creative storytelling skills.</p>
+            <p>Outside of programming, I enjoy playing musical instruments and listening to 
+                music.</p>
             <p>I am currently seeking a co-op or junior developer position 
                 where I can apply my skills, grow as a professional, and contribute 
                 to impactful projects.</p>
         </div>
     </div>
-
-
-    <div class="container">
-
-
+    <hr>
+    <div class="container" id="container-3">
+        <h1 class="content-title" id="my-project">My Project</h1>
+        <div class="container" id="project-container">
+            <!--project sample goes here-->
+        </div>
     </div>
+    <!--Sample card-->
+    <div class="card">
+        <img class="card-img" src="./img/project-img.jpg" alt="project img">
+        <div class="card-content">
+            <h1 class="card-name">A Random Name</h1>
+            <h2 class="card-description">This is what a description look like in the card</h2>
+            <button class="card-button">Go to Link</button>
+        </div>
+    </div>
+
     <div class="container"></div>
 </body>
 </html>

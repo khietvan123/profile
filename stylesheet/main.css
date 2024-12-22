@@ -1,4 +1,4 @@
-/*Style header and navigation on header start here*/
+Style header and navigation on header start here
 .header-main{
     background: linear-gradient(to bottom,rgb(28, 9, 65),rgb(20, 6, 33)) no-repeat;
 }
@@ -62,6 +62,11 @@ body{
     border-width: 5px; */
     display: flex;
     justify-content: space-around;
+    margin-bottom: 9vw;
+    animation: fade 2  s ease-in-out;
+}
+
+#container-1{
     margin-bottom: 20vw;
 }
 #greet-container{
@@ -135,9 +140,6 @@ body{
     width: 45vw;
     h1{
         text-align: left;
-        color: purple;
-        font-size: 4vw;
-        font-weight: 900;
     }
     p{
         font-family: 'lato', sans-serif;
@@ -149,11 +151,64 @@ body{
     }
 }
 
-#illustration-1
-{
-    width: 40vw;
-    filter: drop-shadow(30px 30px 1000px rgb(64, 10, 111));
+.content-title{
+    color: purple;
+    font-size: 4vw;
+    font-weight: 900;
 }
+
+#illustration-1{
+    width: 40vw;
+    filter: drop-shadow(30px 30px 1000px rgb(86, 14, 149));
+    animation: floating 3s ease-in-out infinite;
+}
+
+#my-project{
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#container-3{
+    display: block;
+}
+
+/*---CSS for card goes here---*/
+.card{
+    display: flex;
+    border: solid white;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+    width: 16vw;
+    
+}
+.card-img{
+    padding: 10px;
+    object-fit: contain; /*Make sure the pic fit with the container*/
+}
+
+.card-content{
+    padding: 10px 10px;
+}
+
+.card-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+
+.card-description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: 1vw;
+    margin: 10px 0 10px 0;
+}
+
+.card-button{
+    width: 5vw;
+    height: 3vh;
+}
+
 
 /*ANIMATION*/
 @keyframes fade-up {
@@ -178,12 +233,38 @@ body{
     }
 }
 
-@keyframes up-down {
-    0% { top: 40px; }
-    20% { top: 35px; } /* Slight move up */
-    50% { top: 20px; } /* More significant move up */
-    80% { top: 35px; } /* Slight move back down */
-    100% { top: 40px; } /* Return to original position */
+@keyframes  floating {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-50px); /*The element moves upward by 50 pixels*/
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
-  
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ---- custom scroll bar ----*/
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(217, 203, 230);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient( rgb(217, 203, 230),rgb(164, 5, 227),purple,rgb(164, 5, 227),rgb(217, 203, 230));
+}
