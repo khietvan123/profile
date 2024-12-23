@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardName = document.createElement("a");
         cardName.href = project.URL;
+        cardName.target="_blank";
         cardName.textContent = project.name || "Unnamed Project";
         cardName.classList.add("card-name");
 
