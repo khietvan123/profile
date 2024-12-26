@@ -123,25 +123,25 @@
         <h1 class="content-title">Get In Touch</h1>
         <div id="contact-content">
             <img id="img-contact" src="./img/contact-img.png" alt="contact-img">
-            <div id="contact-container">
+            <form id="contact-container" method="post">
                 <div class="contact-information">
                     <label class="form-label" for="fullname">Full Name</label>
-                    <input type="text" id="fullname" class="form-input">
+                    <input type="text" id="fullname" class="form-input" required>
                 </div>
                 <div class="contact-information">
                     <label class="form-label" for="email">Email</label>
-                    <input type="email" id="email" class="form-input">
+                    <input type="email" id="email" class="form-input" required>
                 </div>
                 <div class="contact-information">
                     <label class="form-label" for="phone">Phone Number</label>
-                    <input type="text" id="phone" class="form-input">
+                    <input type="text" id="phone" class="form-input" required>
                 </div>
                 <div class="contact-information">
                     <label class="form-label" for="message">Message</label>
                     <textarea name="message" id="message" class="form-input"></textarea>
                 </div>
                 <button type="submit" id="submit-form">Submit</button>
-            </div>
+            </form>
         </div>
         <footer>
             <h1 id="footer-title">Joanne Pan</h1>
