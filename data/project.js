@@ -19,8 +19,8 @@ window.project = [
         id: 3,
         name: "Personal Profile",
         description: "Personal project to create a website that has",
-        URL: "https://github.com/khietvan123/Pop_Music_app",
-        deployURL: "https://khietvan123.github.io/Pop_Music_app/",
+        URL: "https://github.com/khietvan123/profile",
+        deployURL: "https://khietvan123.github.io/profile/",
         img: ""
     }
 ];

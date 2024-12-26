@@ -1,5 +1,6 @@
 const projects = window.project;
 document.addEventListener("DOMContentLoaded", () => {
+    //Create project card in website
     const container = document.querySelector('#project-container');
 
     if (projects.length > 0) {
@@ -39,4 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return card;
     }
+
+    //Contact navigation:
+    const contact = document.getElementById('contact-button');
+    contact.addEventListener("click",()=>{
+        const targetSection = document.getElementById('container-5');
+        targetSection.scrollIntoView({behavior:'smooth'});
+    });
 });
