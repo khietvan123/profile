@@ -61,6 +61,7 @@ body{
     /* border: solid yellow;
     border-width: 5px; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 9vw;
     animation: fade 2  s ease-in-out;
@@ -68,11 +69,10 @@ body{
 
 #container-1{
     margin-bottom: 20vw;
+    flex-wrap: wrap;
 }
 
 #greet-container{
-    width: auto;
-    height: auto;
     /* border: solid white;
     border-width: 5px; */
     display: flex;
@@ -450,3 +450,4 @@ html {
 ::-webkit-scrollbar-thumb{
     background: linear-gradient( rgb(217, 203, 230),rgb(164, 5, 227),purple,rgb(164, 5, 227),rgb(217, 203, 230));
 }
+
